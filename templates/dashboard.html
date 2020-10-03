@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'dashboard.css' %}" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar__links">
+        <a href="#">
+          <li>{{username}}</li>
+        </a>
+        <a href="/logout">
+          <li>Logout</li>
+        </a>
+      </ul>
+      <div class="navbar__ham"></div>
+    </nav>
+
+    <div class="container">
+      <div class="reddit-posts">
+        {% for post in posts %}
+        <div class="post">
+          <h1><a href="{{post.link}}" target="_blank">{{ post.title }}</a></h1>
+          <h3>Subreddit - {{post.subreddit}}</h3>
+          <br />
+          <h3><a href="https://www.reddit.com/user/{{post.author}}" target="_black">- {{post.author}}</a></h3>
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="top-user">
+        <div>
+            <h1>Top Authors</h1>
+            <br />
+            {% for name,count in top_authors %}
+                <h3> <a href="https://www.reddit.com/user/{{name}}">-> {{name}}, {{count}}</a></h3>
+            {% endfor %}
+            <br />
+            <h1>Top Domains</h2>
+                <br>
+        </div>
+        
+        <div>
+            {% for link,count in top_links %}
+            <h3><a href="https://{{link}}" target="_blank">-> {{link}}, {{count}}</a></h3>
+            {% endfor %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
