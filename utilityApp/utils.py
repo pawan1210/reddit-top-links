@@ -63,7 +63,7 @@ class RedditClient:
 
         for subreddit in subreddits:
             subreddit_name = subreddit["data"]["display_name"]
-            post_url = "https://reddit.com/r/" + subreddit_name + "/hot.json?limit=20"
+            post_url = "https://reddit.com/r/" + subreddit_name + "/hot.json?limit=100"
             response = requests.get(post_url, headers=headers)
             posts = response.json()["data"]["children"]
 
