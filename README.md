@@ -8,11 +8,11 @@ Hosted Demo: https://reddittoplinks.herokuapp.com/
 
 ## Pre-requisites (to run App locally)
 - Python 3.6 and pip should be preinstalled
-- Twitter developer Credentials
+- Reddit developer Credentials
 
 ## How to Run Locally
 - Clone Repository
-- Install the requirements using ```pip install -r requirements.txt```, in the repository folder
+- Install the requirements using ```pip install -r requirements.txt```, in the repository folder.
 - Create a new app at https://www.reddit.com/prefs/apps with the following details:
 ![Details](https://i.imgur.com/Jn4DRKU.png)
 - Create a .env file inside the reddittoplinks folder, the .env file should contain the following
@@ -42,8 +42,8 @@ class Posts(models.Model):
 ```
 
 ## Note
-- The embeded images in posts with external URLs are also considered as external links.
+- The embedded images in posts with external URLs are also considered as external links.
 - Minor changes were made to the current project to be able to host it on Heroku.
-- Top 100 Posts from each subreddit is considered for each subreddit for getting the links
+- Top 100 Posts from each subreddit are considered for getting the links
 - Top 5 Domains and Top 5 Authors are shown.
 - Number of posts considered, number of top domains and top authors shown can easily be changed to a different value.
