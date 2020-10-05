@@ -1,4 +1,4 @@
-# Vouch Assignement
+# Vouch Assignment
 This is a submission for the assignment by Vouch Insurtech for the Position of Software Engineer. 
 
 The app provides insights abouts links shared in the Subreddits that you follow.
