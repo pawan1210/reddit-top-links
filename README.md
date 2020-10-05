@@ -26,3 +26,14 @@ CLIENT_SECRET=<Your Reddit Client Secret>
 - Go to Homepage and Press Login
 - Approve the App to see data from your account
 - You will be redirected to the dashboard which will show all the required information.
+
+## Database Schema
+```
+class Posts(models.Model):
+    username = models.CharField(max_length=100, blank=False)
+    author = models.CharField(max_length=100, blank=False)
+    text = models.TextField(blank=False)
+    title = models.TextField(blank=False)
+    link = models.URLField(max_length=400, blank=False)
+    subreddit = models.URLField(max_length=400, blank=True)
+```
