@@ -13,6 +13,8 @@ Hosted Demo: https://reddittoplinks.herokuapp.com/
 ## How to Run Locally
 - Clone Repository
 - Install the requirements using ```pip install -r requirements.txt```, in the repository folder
+- Create a new app at https://www.reddit.com/prefs/apps with the following details:
+![Details](https://i.imgur.com/Jn4DRKU.png)
 - Create a .env file inside the reddittoplinks folder, the .env file should contain the following
 ```
 CLIENT_ID=<Your Reddit Client ID>
