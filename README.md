@@ -38,3 +38,10 @@ class Posts(models.Model):
     link = models.URLField(max_length=400, blank=False)
     subreddit = models.URLField(max_length=400, blank=True)
 ```
+
+## Note
+- The embeded images in posts with external URLs are also considered as external links.
+- Minor changes were made to the current project to be able to host it on Heroku.
+- Top 100 Posts from each subreddit is considered for each subreddit for getting the links
+- Top 5 Domains and Top 5 Authors are shown.
+- Number of posts considered, number of top domains and top authors shown can easily be changed to a different value.
