@@ -4,6 +4,7 @@ This is a submission for the assignment by Vouch Insurtech for the Position of S
 The app provides insights abouts links shared in the Subreddits that you follow.
 It allows you to see the top contributors who shared different links, along with the top domains whose links were shared and also lists the posts with the said links.
 
+Hosted Demo: https://reddittoplinks.herokuapp.com/
 
 ## Pre-requisites (to run App locally)
 - Python 3.6 and pip should be preinstalled
